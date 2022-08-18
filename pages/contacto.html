@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Le péché</title>
+</head>
+<body class="contenedorContacto">
+    <header class="encabezado">
+        <img src="../imagenes/logo.jpg" alt="logo" class="logo">
+        <h1>Le Péché</h1>
+        <nav>
+            <ul class="barra">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nuestros-productos.html">Nuestros productos</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contacto</h2>
+        <section class="diseñoForm">
+            <form class="formulario">
+                <fieldset>
+                    <legend>Comunicate con nosotros</legend>
+                    <div>
+                        <label for="nombre">Nombre y apellido:</label>
+                        <input type="text" name="nombre">
+                    </div>
+                    <div>
+                        <label for="barrio">Barrio:</label>
+                        <input type="text" name="barrio">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div>
+                        <label for="telefono">Tel:</label>
+                        <input type="number" name="telefono">
+                    </div>
+                    <div class="opcion">
+                        <label>¿Desea que incorporemos algún producto?</label>
+                        <select class="pregunta">
+                            <option>Sí</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                    <div class="comentario">
+                        <label for="mensaje">Comentario:</label>
+                        <textarea name="mensaje" cols="40" rows="10" class="mensaje"></textarea>
+                    </div>
+                    <div class="promociones">
+                        <label>Deseo recibir promociones</label>
+                        <input type="checkbox" checked class="check">
+                    </div>
+                    <input type="reset" value="Borrar todo" class="boton">
+                    <input type="submit" value="Enviar" class="boton">
+                </fieldset>
+            </form>
+            <div class="divCarta">
+                <img src="../imagenes/contacto.png" alt="sobre de carta" class="carta">
+            </div>
+        </section>
+    </main>
+    <footer class="pieDePagina">
+        <p class="redes">Seguinos en: <a href="https://facebook.com" target="_BLANK">Facebook</a> <a href="https://instagram.com" target="_BLANK">Instagram</a></p>
+        <p class="autor">&copy; Aixa Minicucci 2022</p>
+    </footer>
+</body>
+</html>
