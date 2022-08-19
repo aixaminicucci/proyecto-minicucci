@@ -103,18 +103,6 @@ section article img {
 }
 .animacionTexto {
     transform: rotate(-5deg);
-    animation-name: animacion;
-    animation-duration: 5s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-@keyframes animacion {
-    0% {background-color: #f89999;}
-    20% {background-color: #fac8ab;}
-    40% {background-color: #fffccf;}
-    60% {background-color: #c5ffc2;}
-    80% {background-color: #c7c5fb}
-    100% {background-color: #e9c4ee;}
 }
 
 .rowIndex {
@@ -350,6 +338,21 @@ form fieldset div input {
         font-size: 1.7rem;
         color: #621313;
         border: #6b0c05 solid 1px;
+    }
+    .animacionTexto {
+        transform: rotate(-5deg);
+        animation-name: animacion;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+    @keyframes animacion {
+        0% {background-color: #f89999;}
+        20% {background-color: #fac8ab;}
+        40% {background-color: #fffccf;}
+        60% {background-color: #c5ffc2;}
+        80% {background-color: #c7c5fb}
+        100% {background-color: #e9c4ee;}
     }
     .rowIndex {
         display: flex;
