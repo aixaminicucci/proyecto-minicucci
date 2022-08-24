@@ -74,7 +74,7 @@ main div p {
     text-align: center;
 }
 .card {
-    margin: 5px;
+    margin: 3px;
 }
 .card div h4 {
     font-family: 'Nuosu SIL', serif;
@@ -136,8 +136,7 @@ ol {
     list-style: none;
 }
 .cardEvento {
-    background-color: #ebd6ac;
-    border: 2px solid #b0805c;
+    background-color: #efd8b9;
 }
 .imagenes {
     display: none;
@@ -149,6 +148,9 @@ ol {
     background-color: #f7eade;
     margin-bottom: 5px;
 }
+.textoNosotros p {
+    font-size: 1.5rem;
+}
 .nuestraProduccion {
     display: none;
 }
@@ -156,12 +158,12 @@ ol {
     display: inline-block;
     font-size: 1.2rem;
     font-family: 'Nuosu SIL', serif;
-    background-color: #fbf3cc;
+    background-color: #fbcecc;
     color: #bb4a19;
     padding: 10px;
     margin: 10px;
-    border: 8px solid #ffdb92;
-    outline: 4px solid #fbf2b3;
+    border: 8px solid #ff9292;
+    outline: 4px solid #812e15;
 }
 form fieldset {
     display: grid;
@@ -263,7 +265,7 @@ form fieldset div input {
         justify-content: center;
     }
     .card {
-        margin: 15px;
+        margin: 10px;
     }
     .autor {
         text-align: center;
@@ -335,10 +337,10 @@ form fieldset div input {
     }
     .formulario {
         width: 40%;
-        background-color: #6b0c05;
+        background-color: #5d5e5e;
         color: #f3f1e4;
-        border:#440804 solid 5px;
-        outline: #2e0401;
+        border:#33373e solid 5px;
+        outline: #000000;
     }
     .divCarta {
         display: flex;
@@ -346,8 +348,8 @@ form fieldset div input {
     }
     .carta { 
         display: flex;
-        width: 500px;
-        height: 350px;
+        width: 400px;
+        height: 450px;
         padding-top: 190px;
     }
     form fieldset legend {
@@ -361,7 +363,7 @@ form fieldset div input {
     form fieldset div label {
         display: flex;
         flex-direction: row;
-        font-size: 1.6rem;
+        font-size: 1.1rem;
         padding: 10px;
         margin-bottom: 5px;
         margin-top: 5px;
@@ -387,7 +389,7 @@ form fieldset div input {
         font-size: 1.3rem;
         padding: 8px;
         margin: 5px;
-        width: 30%;
+        width: 40%;
     }
     .opcion {
         display: flex;
