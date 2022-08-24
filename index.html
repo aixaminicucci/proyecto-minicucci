@@ -3,45 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">g
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Le péché</title>
 </head>
 <body class="contenedorIndex">
     <header class="encabezado">
-        <img src="./imagenes/logo.jpg" alt="logo" class="logo">
-        <h1>Le Péché</h1>
-        <nav>
-            <ul class="barra">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nuestros-productos.html">Nuestros productos</a></li>
-                <li><a href="./pages/eventos.html">Eventos</a></li>
-                <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bgMio">
+            <div class="container-fluid d-lg-flex flex-lg-row">
+                <a class="navbar-brand" href="#"><img src="./imagenes/logo.jpg" alt="logo" class="logo" height="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <h1>Le péché</h1>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nuestros-productos.html">Nuestros productos</a>
+                        </li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <img src="./imagenes/collage1.jpg" alt="Collage de delicias" class="img2">
-        <div class="rowTexto">
-            <p class="animacionTexto">Bienvenidos a Le Péché, un sitio creado para que encuentres eso dulce que estás buscando. Nuestros productos son elaborados con especial dedicación y materia prima de calidad.</p>
-        </div>
-        <h2>Top 3 especiales</h2>
-        <section class="rowIndex">
-            <article>
-                <img src="./imagenes/tortabomba.jpg" alt="Torta bomba">
-            </article>
-            <article>
-                <img src="./imagenes/magiccupcake.jpg" alt="Magic cupcakes">
-            </article>
-            <article>
-            <img src="./imagenes/eclairsdechocolateycrema.jpg" alt="Eclairs de crema y chocolate">
-            </article>
+        <section class="contenedorPresentacion container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <img class=" w-100" src="./imagenes/presentacion.png" alt="presentacion">
+                </div>
+                <div class="textoPresentacion col-lg-5 col-12 mt-2">
+                    <p class="animacionTexto">Bienvenidos a Le Péché, un sitio creado para que encuentres eso dulce que estás buscando. Nuestros productos son elaborados con especial dedicación y materia prima de calidad.</p>
+                </div>
+                <div class="col-lg-3 col-12">
+
+                </div>
+            </div>
         </section>
+        <div>
+            <div class="especiales">
+                <h2>Top 3 especiales</h2>
+            </div>
+            <section class="container">
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/tortabomba.jpg" class="card-img-top" alt="Torta bomba">
+                    <div class="card-body">
+                        <h4 class="card-text">Torta Bomba</h4>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/magiccupcake.jpg" class="card-img-top" alt="Magic cupcakes">
+                    <div class="card-body">
+                        <h4 class="card-text">Magic cupcakes</h4>
+                    </div>
+                </div>            
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/eclairsdechocolateycrema.jpg" class="card-img-top" alt="Eclairs con chocolate">
+                    <div class="card-body">
+                        <h4 class="card-text">Eclairs con chocolate</h4>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="pieDePagina">
-        <p class="redes">Seguinos en: <a href="https://facebook.com" target="_BLANK">Facebook</a> <a href="https://instagram.com" target="_BLANK">Instagram</a></p>
+        <p class="redes">Seguinos en: <a href="https://facebook.com" target="_BLANK">Facebook</a> <a href="https://www.instagram.com/le_peche01/" target="_BLANK">Instagram</a></p>
         <p class="autor">&copy; Aixa Minicucci 2022</p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

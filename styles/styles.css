@@ -7,206 +7,150 @@
     padding: 0;
     margin: 0;
 }
-.contenedorIndex {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 90px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-.encabezado {
-    grid-area: header;
-    background-color: #e3be62;
-    border: 2px solid #bea054;
-}
-.logo {
-    display: inline-block;
-    width: 15%;
+
+.bgMio {
+    background-color: #6b0c05;
+    width: 100%;
+    border: 2px solid #ac9511;
 }
 h1 {
-    display: inline-block;
-    color: #8a5334;
-    font-family: "fontrose";
-    font-size: 1.6rem;
-    font-style: italic;
-    padding-left: 15px;
+    display: none;
 }
-.barra {
-    list-style: none;
-    text-align: left;
+.nav-item a {
+    color: #ffffff;
 }
-.barra li {
-    display: flex;
-    padding: 2px;
-    margin: 5px;
+.nav-link {
+    margin-left: 15px;
+    font-size: 1rem;
+}
+nav div div {
+    justify-content: end;
+    padding: 25px;
 }
 nav ul li a {
     font-size: 0.8rem;
-    background-color: #e3bc61;
-    color: #62270c;
+    background-color: #540a0a;
     font-family: 'Nuosu SIL', serif;
     text-decoration: none;
     border-radius: 5px;
-    border-bottom: 3px solid #d18c47;
+    border-bottom: 3px solid #3e0303;
     margin-right: 1px;
     padding: 2px;
 }
 nav ul li a:hover {
-    background-color: #d08008;
+    background-color: #a94747;
 }
 main {
-    grid-area: main;
     background-image: url("../imagenes/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .img2 {
     width: 100%;
-    padding-bottom: 5px;
 }
 main div p {
     font-size: 1.1rem;
     font-family: 'Nuosu SIL', serif;
-    text-align: center;
 }
-h2 {
-    font-size: 1.3rem;
-    font-family: 'Nuosu SIL', serif;
-    background-color: #f3f0f2;
-    color: #62270c;
-    text-align: center;
+.contenedorPresentacion {
+    box-shadow: 25px 20px 37px -4px rgba(117,17,17,0.75);
+    -webkit-box-shadow: 25px 20px 37px -4px rgba(117,17,17,0.75);
+    -moz-box-shadow: 25px 20px 37px -4px rgba(117,17,17,0.75);
+    margin-top: 10px;
+}
+.especiales{
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 25px;
     padding-bottom: 5px;
     padding-top: 5px;
+    background-color: #e9e8b1;
     border: #bea054 solid 1px;
     border-radius: 3px;
 }
-section article img {
-    width: 95%;
-    height: 95%;
+.especiales h2{
+    font-size: 1rem;
+    font-family: 'Nuosu SIL', serif;
+    color: #62270c;
+    text-align: center;
 }
-.rowTexto {
-    display: grid;
-    width: 100%;
-    height: 300px;
-    grid-template-columns: 75%;
-    grid-template-rows: 25%;
-    justify-content: center;
-    margin-bottom: 5px;
-    transition: 2s;
+.card {
+    margin: 5px;
 }
-.rowTexto:hover {
-    height: 500px;
-}
-.animacionTexto {
-    transform: rotate(-5deg);
-}
+.card div h4 {
+    font-family: 'Nuosu SIL', serif;
+    color: #540a0a;
+    text-align: center;
 
-.rowIndex {
+}
+.container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    justify-content: center;
     align-items: center;
-
 }
 .pieDePagina {
-    grid-area: footer;
-    background-color: #e3be62;
-    border: 4px solid #bea054;
+    background-color: #6b0c05;
+    border: 2px solid #ac9511;
 }
 .redes {
     font-size: 0.8rem;
+    font-family: 'Nuosu SIL', serif;
+    color: #ece075;
     text-align: end;
+    margin-right: 10px;
 }
 .autor {
-    font-size: 0.8rem;
+    font-family: 'Nuosu SIL', serif;
+    color: #000000;
+    font-size: 1rem;
     text-align: left;
+    margin-left: 10px;
+
 }
 .redes a {
     display: flex;
     flex-direction: row;
     justify-content: end;
     padding-top: 5px;
-    color: #983f08;
+    color: #fff7f3;
 
 }
-.contenedorProductos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 90px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+.seccionesNombre {
+    background-color: #c09090;
+    border: 2px solid #a94747;
+}
+h2 {
+    text-align: center;
+    font-family: 'Nuosu SIL', serif;
+    font-size: 1.1rem;
+}
+main h3 {
+    display: none;
 }
 main ol li {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: 'Nuosu SIL', serif;
     text-align: center;
     margin-bottom: 5px;
-    padding: 5px;
 }
-.contenedorNosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 90px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+ol {
+    list-style: none;
 }
-.rowNosotros {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 75%;
-    grid-template-rows: 25%;
-    justify-content: center;
-    margin-bottom: 5px;
+.cardEvento {
+    background-color: #ebd6ac;
+    border: 2px solid #b0805c;
 }
-.nuestraProduccion {
-    display: none;
-}
-main div div p {
-    font-size: 1.2rem;
-    background-color: #fdf5d8;
-    color: #5a190a;
-    border: #bea054 solid 5px;
-    border-radius: 15px;
-}
-.contenedorEventos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 90px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-.rowEventos {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 75%;
-    grid-template-rows: 180px 180px 180px 180px;
-    justify-content: center;
-}
-h3 {
+.imagenes {
     display: none;
 }
 .rowImagenes {
     display: none;
 }
-.contenedorContacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 90px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+.textoNosotros {
+    background-color: #f7eade;
+    margin-bottom: 5px;
+}
+.nuestraProduccion {
+    display: none;
 }
 .formulario {
     display: inline-block;
@@ -254,11 +198,8 @@ form fieldset div input {
 .boton {
     font-family: 'Nuosu SIL', serif;
     font-size: 15px;
-    background-color: #f9efce;
-    color: #422346;
     padding: 8px;
     margin: 5px;
-    border: 5px outset #fcd4a4;
 }
 .opcion {
     display: flex;
@@ -280,71 +221,33 @@ form fieldset div input {
     display: none;
 }
 @media screen and (min-width: 1024px){
-    .contenedorIndex {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 4fr 1fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
-    .encabezado {
-        background-color: #6b0c05;
-        display: flex;
-        padding: 1rem;
+    .nav-link {
+        margin-left: 15px;
+        font-size: 1.1rem;
     }
     h1 {
-        display: flex; 
-        align-items: flex-end;
-        font-size: 4rem;
-    }
-    nav {
         display: flex;
-        width: 95%;
-        justify-content: end;
+        font-family: fontrose;
+        font-size: 3.3rem;
+        color: #aa8740;
     }
-    .barra {
-        display: flex; 
-        flex-direction: row;
-        align-items: flex-end;
-        gap: 1rem;
-    }
-    .barra li {
-        background-color: #6b0c05;
-    }
-    nav ul li a {
-        font-size: 1.3rem;
-        background-color: #621313;
-        color: #916b1a;
-        font-family: 'Nuosu SIL', serif;
-        text-decoration: none;
-        border-radius: 10px;
-        border-bottom: 3px solid #260303;
-        margin-right: 1px;
-        padding: 5px;
-    }
-    .rowTexto {
-        display: flex;
-        width: 60%;
-        justify-content: center;
-        align-items: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 38%;
-    }
-    .rowTexto p {
-        background-color: #ffdfbf;
+    main div p {
         font-size: 1.7rem;
-        color: #621313;
-        border: #6b0c05 solid 1px;
+        font-family: 'Nuosu SIL', serif;
+    }
+    section div div p {
+        box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);
+    -webkit-box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);
+    -moz-box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);
     }
     .animacionTexto {
-        transform: rotate(-5deg);
         animation-name: animacion;
         animation-duration: 5s;
         animation-timing-function: ease;
         animation-iteration-count: infinite;
+    }
+    .especiales h2 {
+        font-size: 1.5rem;
     }
     @keyframes animacion {
         0% {background-color: #f89999;}
@@ -354,18 +257,13 @@ form fieldset div input {
         80% {background-color: #c7c5fb}
         100% {background-color: #e9c4ee;}
     }
-    .rowIndex {
+    .container {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
     }
-    section article img {
-        display: flex;
-        width: 100%;
-    }
-    .pieDePagina {
-        background-color: #6b0c05;
+    .card {
+        margin: 15px;
     }
     .autor {
         text-align: center;
@@ -381,60 +279,27 @@ form fieldset div input {
         flex-direction: row;
         justify-content: end;
         padding-top: 5px;
-        color: #988308;
-
     }
-    .contenedorProductos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 4fr 1fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
+    h2 {
+        font-size: 1.8rem;
     }
-    .productos {
+    main h3 {
         display: flex;
-        width: 100%;
-        font-size: 1.6rem;
-        font-family: 'Nuosu SIL', serif;
-        font-style: italic;
-        text-decoration: underline;
-        color: #621313;
         justify-content: center;
-        margin-bottom: 10px;
+        font-family: fontrose;
+        font-size: 2.5rem;
+        font-style: italic;
     }
-    
-    .contenedorEventos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 4fr 1fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
-    .rowEventos {
-        display: flex;
-    }
-    .columna {
-        display: flex;
-        flex-direction: column;
-        background-color: #61100a;
-        color: #f8e3f5;
-        padding: 20px;
-        margin: 20px;
-    }
-    .columna p {
-        padding: 30px;
-        background-color: #ffffff;
-        border: #531313 solid 5px;
+    main ol li {
+        font-size: 1.3rem;
+        font-family: 'Nuosu SIL', serif;
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 5px;
     }
     .imagenes {
         display: flex;
         width: 100%;
-        font-size: 1.6rem;
-        font-family: 'Nuosu SIL', serif;
         font-style: italic;
         text-decoration: underline;
         color: #621313;
@@ -453,46 +318,14 @@ form fieldset div input {
         padding: 10px;
         margin: 10px;
     }
-    .contenedorNosotros {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 4fr 1fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
+    section div div img {
+        margin-top: 15px;
     }
-    .rowNosotros {
+    .nuestraProduccion{
         display: flex;
-        flex-direction: row;
-    } 
-    .sobreNosotros {
-        width: 70vh;
-        padding-top: 100px;
-    }
-    .sobreNosotros p {
-        background-color: #eddbd0;
-        border: #b48a8a solid 5px;
-        font-size: 1.6rem;
-    }
-    .nuestraProduccion {
-        display: flex;
-        justify-content: center;
-    }
-    .nuestraProduccion img {
-        width: 50%;
-        height: 70%;
-        margin-top: 50px;
-        border: #260303 solid 5px;
-    }
-    .contenedorContacto {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 4fr 1fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
+        height: 540px;
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
     .diseñoForm {
         display: flex;
@@ -552,11 +385,8 @@ form fieldset div input {
     .boton {
         font-family: 'Nuosu SIL', serif;
         font-size: 1.3rem;
-        background-color: #eba090;
-        color: #000000;
         padding: 8px;
         margin: 5px;
-        border: 5px outset #b02f42;
         width: 30%;
     }
     .opcion {
@@ -578,5 +408,4 @@ form fieldset div input {
         height: 20px;
         margin-top: 25px;
     }
-    
 }
