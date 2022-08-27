@@ -331,26 +331,31 @@ form fieldset div input {
     }
     .diseñoForm {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         
     }
     .formulario {
-        width: 40%;
-        background-color: #5d5e5e;
-        color: #f3f1e4;
-        border:#33373e solid 5px;
+        width: 60%;
+        background-color: #fdf2e3;
+        color: #211705;
+        border:#d6b8a5 solid 5px;
         outline: #000000;
     }
     .divCarta {
         display: flex;
-        width: 50%;
+        position: relative;
+        transition: transform 1s;
+        margin-top: 50px;
+    }
+    .divCarta:hover {
+        transform: skew(30deg);
     }
     .carta { 
         display: flex;
-        width: 400px;
-        height: 450px;
-        padding-top: 190px;
+        flex-direction: row;
+        width: 350px;
+        height: 250px;
     }
     form fieldset legend {
         display: flex;
