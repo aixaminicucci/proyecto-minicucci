@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap");
+@font-face {
+  font-family: fontrose;
+  src: url(../fonts/Rose.ttf);
+}
+header nav {
+  background-color: #6b0c05;
+  width: 100%;
+  border: 2px solid #ac9511;
+}
+header nav div div h1 {
+  display: none;
+}
+header nav div div {
+  justify-content: end;
+  padding: 25px;
+}
+header nav div div ul li .nav-link {
+  color: #ffffff;
+  margin-left: 15px;
+  font-size: 1rem;
+}
+header nav div div ul li a {
+  background-color: #540a0a;
+  font-family: "Nuosu SIL", serif;
+  text-decoration: none;
+  border-radius: 5px;
+  border-bottom: 3px solid #3e0303;
+  margin-right: 1px;
+  padding: 2px;
+}
+header nav div div ul li a:hover {
+  background-color: #a94747;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav div div h1 {
+    display: flex;
+    font-family: fontrose;
+    font-size: 3.3rem;
+    color: #aa8740;
+  }
+  header nav div div ul li .nav-link {
+    margin-left: 15px;
+    font-size: 1.1rem;
+  }
+}
+@font-face {
+  font-family: fontrose;
+  src: url(../fonts/Rose.ttf);
+}
+main {
+  background-image: url("../imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .img2 {
+  width: 100%;
+}
+main .contenedorPresentacion {
+  box-shadow: 25px 20px 37px -4px rgba(117, 17, 17, 0.75);
+  -webkit-box-shadow: 25px 20px 37px -4px rgba(117, 17, 17, 0.75);
+  -moz-box-shadow: 25px 20px 37px -4px rgba(117, 17, 17, 0.75);
+  margin-top: 10px;
+}
+main .contenedorPresentacion div div p {
+  font-size: 1.1rem;
+  font-family: "Nuosu SIL", serif;
+  text-align: center;
+}
+main div .especiales {
+  margin-bottom: 5px;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #e9e8b1;
+  border: #bea054 solid 1px;
+  border-radius: 3px;
+}
+main div .especiales h2 {
+  font-size: 1rem;
+  font-family: "Nuosu SIL", serif;
+  color: #62270c;
+  text-align: center;
+}
+main div .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main div .container .card {
+  margin: 3px;
+}
+main div .container .card div h4 {
+  font-family: "Nuosu SIL", serif;
+  color: #540a0a;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main section div div .animacionTexto {
+    box-shadow: 12px 11px 30px 3px rgba(235, 189, 189, 0.88);
+    -webkit-box-shadow: 12px 11px 30px 3px rgba(235, 189, 189, 0.88);
+    -moz-box-shadow: 12px 11px 30px 3px rgba(235, 189, 189, 0.88);
+    font-size: 1.7rem;
+    font-family: "Nuosu SIL", serif;
+    text-align: center;
+    -webkit-animation-name: animacion;
+            animation-name: animacion;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes animacion {
+    0% {
+      background-color: #f89999;
+    }
+    20% {
+      background-color: #fac8ab;
+    }
+    40% {
+      background-color: #fffccf;
+    }
+    60% {
+      background-color: #c5ffc2;
+    }
+    80% {
+      background-color: #c7c5fb;
+    }
+    100% {
+      background-color: #e9c4ee;
+    }
+  }
+  @keyframes animacion {
+    0% {
+      background-color: #f89999;
+    }
+    20% {
+      background-color: #fac8ab;
+    }
+    40% {
+      background-color: #fffccf;
+    }
+    60% {
+      background-color: #c5ffc2;
+    }
+    80% {
+      background-color: #c7c5fb;
+    }
+    100% {
+      background-color: #e9c4ee;
+    }
+  }
+  main div .especiales h2 {
+    font-size: 1.5rem;
+  }
+  main div .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main div .container .card {
+    margin: 10px;
+  }
+}
+.pieDePagina {
+  background-color: #6b0c05;
+  border: 2px solid #ac9511;
+}
+.pieDePagina .redes {
+  font-size: 0.8rem;
+  font-family: "Nuosu SIL", serif;
+  color: #ece075;
+  text-align: end;
+  margin-right: 10px;
+}
+.pieDePagina .redes a {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-top: 5px;
+  color: #fff7f3;
+}
+.pieDePagina .autor {
+  font-family: "Nuosu SIL", serif;
+  color: #000000;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .pieDePagina .autor {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .pieDePagina .redes {
+    text-align: right;
+    font-size: 1.4rem;
+    padding-right: 80px;
+  }
+  .pieDePagina .redes a {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-top: 5px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

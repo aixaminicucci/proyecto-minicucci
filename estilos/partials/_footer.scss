@@ -1,0 +1,46 @@
+.pieDePagina {
+    background-color: #6b0c05;
+    border: 2px solid #ac9511;
+    .redes {
+        font-size: 0.8rem;
+        font-family: 'Nuosu SIL', serif;
+        color: #ece075;
+        text-align: end;
+        margin-right: 10px;
+        a {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            padding-top: 5px;
+            color: #fff7f3;
+        }
+    }
+    .autor {
+        font-family: 'Nuosu SIL', serif;
+        color: #000000;
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    
+}
+@media screen and (min-width: 1024px){
+    .pieDePagina {
+        .autor {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .redes {
+            text-align: right;
+            font-size: 1.4rem;
+            padding-right: 80px;
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                padding-top: 5px;
+            }
+        }
+
+    }
+}
