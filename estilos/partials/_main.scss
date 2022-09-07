@@ -57,39 +57,200 @@ main {
             }
         }
     }
-}
-@media screen and (min-width: 1024px){
-main {
-    section {
-        div {
+    .seccionesNombre {
+        background-color: #c09090;
+        border: 2px solid #a94747;
+        h2 {
+            text-align: center;
+            font-family: 'Nuosu SIL', serif;
+            font-size: 1.1rem;
+        }
+    }
+    h3 {
+        display: none;
+    }
+    ol {
+        list-style: none;
+        li {
+            font-size: 1rem;
+            font-family: 'Nuosu SIL', serif;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    }
+    div {
+        .card {
+        background-color: #efd8b9;
             div {
-                .animacionTexto {
-                    box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);
-                    -webkit-box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);
-                    -moz-box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);                
-                    font-size: 1.7rem;
+                h4 {
                     font-family: 'Nuosu SIL', serif;
+                    color: #540a0a;
+                    text-align: center;             
+                    }
+                p {
                     text-align: center;
-                    animation-name: animacion;
-                    animation-duration: 5s;
-                    animation-timing-function: ease;
-                    animation-iteration-count: infinite;
-                    @keyframes animacion {
-                        0% {background-color: #f89999;}
-                        20% {background-color: #fac8ab;}
-                        40% {background-color: #fffccf;}
-                        60% {background-color: #c5ffc2;}
-                        80% {background-color: #c7c5fb}
-                        100% {background-color: #e9c4ee;}
+                    font-family: 'Nuosu SIL', serif;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .imagenes {
+        display: none;
+    }
+    .rowImagenes {
+        display: none;
+    }
+    .contenedorPresentacion {
+        .textoNosotros {
+            background-color: #f7eade;
+            margin-bottom: 5px;
+            p {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+        .nuestraProduccion {
+            display: none;
+        }
+    }
+    .diseñoForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            .carta {
+                display: none;
+            }
+        }
+        form {
+            display: inline-block;
+            font-size: 1.2rem;
+            font-family: 'Nuosu SIL', serif;
+            background-color: #fbcecc;
+            color: #bb4a19;
+            padding: 10px;
+            margin: 10px;
+            border: 8px solid #ff9292;
+            outline: 4px solid #812e15;
+            fieldset {
+                display: grid;
+                width: 100%;
+                align-items: center;
+                legend {
+                    display: none;
+                }
+                div {
+                    display: grid;
+                    justify-content: center;
+                    label {
+                        display: grid;
+                        width: 100%;
+                        grid-template-columns: 100%;
+                        grid-template-rows: 5px 5px 5px 5px 5px 5px 5px;
+                        padding: 1px;
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+                        align-items: center;
+                    }
+                    input {
+                        background-color: #f3f0f2;
+                        width: 100%;
+                        height: 35px;
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+                    }
+                    .mensaje {
+                        background-color: #f3f0f2;
+                    }
+                }
+                .boton {
+                    font-family: 'Nuosu SIL', serif;
+                    font-size: 15px;
+                    padding: 8px;
+                    margin: 5px;
+                }
+                .opcion {
+                    display: flex;
+                    padding: 10px;
+                    .pregunta {
+                        width: 60px;
+                        height: 35px;
+                    }
+                }
+                .promociones {
+                    display: flex;
+                    .check {
+                        width: 20px;
+                        height: 20px;
                     }
                 }
             }
         }
     }
-    div {
-        .especiales {
+}
+@media screen and (min-width: 1024px){
+    main {
+        section {
+            div {
+                div {
+                    .animacionTexto {
+                        box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);
+                        -webkit-box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);
+                        -moz-box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);                
+                        font-size: 1.7rem;
+                        font-family: 'Nuosu SIL', serif;
+                        text-align: center;
+                        animation-name: animacion;
+                        animation-duration: 5s;
+                        animation-timing-function: ease;
+                        animation-iteration-count: infinite;
+                        @keyframes animacion {
+                            0% {background-color: #f89999;}
+                            20% {background-color: #fac8ab;}
+                            40% {background-color: #fffccf;}
+                            60% {background-color: #c5ffc2;}
+                            80% {background-color: #c7c5fb}
+                            100% {background-color: #e9c4ee;}
+                        }
+                    }
+                }
+            }
+        }
+        div {
+            .especiales {
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .card {
+                    margin: 10px;
+                }
+            }
+        }
+        .seccionesNombre {
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
+            }
+        }
+        .productos {
+            display: flex;
+            justify-content: center;
+            font-family: fontrose;
+            font-size: 2.5rem;
+            font-style: italic;
+        }
+        ol {
+            li {
+                font-size: 1.3rem;
+                font-family: 'Nuosu SIL', serif;
+                text-align: center;
+                margin-bottom: 5px;
+                padding: 5px;  
             }
         }
         .container {
@@ -98,8 +259,145 @@ main {
             justify-content: center;
             .card {
                 margin: 10px;
+                div {
+                    h4 {
+                        font-family: 'Nuosu SIL', serif;
+                        color: #540a0a;
+                        text-align: center;
+                                    
+                        
+                    }
+                    p {
+                        text-align: center;
+                        font-family: 'Nuosu SIL', serif;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        .imagenes {
+            display: flex;
+            width: 100%;
+            font-family: fontrose;
+            font-style: italic;
+            font-size: 2.8rem;
+            text-decoration: underline;
+            color: #621313;
+            justify-content: center;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .rowImagenes {
+            display: flex;
+            padding: 5px;
+            margin: 5px;
+            div {
+                img {
+                    width: 100%;
+                }
+            }
+            .tentate {
+                padding: 10px;
+                margin: 10px
+            }
+        }
+        .contenedorPresentacion {
+            div {
+                .nuestraProduccion {
+                    display: flex;
+                    height: 540px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .diseñoForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .divCarta {
+                display: flex;
+                position: relative;
+                transition: transform 1s;
+                margin-top: 50px;
+                &:hover {
+                    transform: skew(30deg);
+                }
+                .carta {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 350px;
+                    height: 250px; 
+                    
+                }
+            }
+            .formulario {
+                width: 60%;
+                background-color: #fdf2e3;
+                color: #211705;
+                border:#d6b8a5 solid 5px;
+                outline: #000000;
+                fieldset {
+                    legend {
+                        display: flex;
+                        font-size: 1.7rem; 
+                    }
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        label {
+                            display: flex;
+                            flex-direction: row;
+                            font-size: 1.1rem;
+                            padding: 10px;
+                            margin-bottom: 5px;
+                            margin-top: 5px;
+                        }
+                        input {
+                            background-color: #f3f0f2;
+                            width: 100%;
+                            height: 35px;
+                            margin-bottom: 5px;
+                            margin-top: 5px;
+                            margin-right: 20px;
+                        }
+                    }
+                    .comentario {
+                        flex-direction: column;
+                        .mensaje {
+                            width: 300px;
+                            height: 200px;
+                            margin-left: 20px;
+                        }
+                    }
+                    .boton {
+                        font-family: 'Nuosu SIL', serif;
+                        font-size: 1.3rem;
+                        padding: 8px;
+                        margin: 5px;
+                        width: 40%;
+                    }
+                    .opcion {
+                        display: flex;
+                        padding: 10px; 
+                        .pregunta {
+                            display: flex;
+                            width: 20%;
+                            margin-top: 15px;
+                        }
+                    }
+                    .promociones {
+                        display: flex;
+                        width: 50%;
+                        .check {
+                            width: 20px;
+                            height: 20px;
+                            margin-top: 25px;
+                        }
+                    }
+                }
             }
         }
     }
-}
 }

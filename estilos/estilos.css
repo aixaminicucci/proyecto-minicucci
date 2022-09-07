@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap");
 @font-face {
@@ -7,7 +8,7 @@
 header nav {
   background-color: #6b0c05;
   width: 100%;
-  border: 2px solid #ac9511;
+  border: 2px solid #ece075;
 }
 header nav div div h1 {
   display: none;
@@ -97,6 +98,129 @@ main div .container .card div h4 {
   color: #540a0a;
   text-align: center;
 }
+main .seccionesNombre {
+  background-color: #c09090;
+  border: 2px solid #a94747;
+}
+main .seccionesNombre h2 {
+  text-align: center;
+  font-family: "Nuosu SIL", serif;
+  font-size: 1.1rem;
+}
+main h3 {
+  display: none;
+}
+main ol {
+  list-style: none;
+}
+main ol li {
+  font-size: 1rem;
+  font-family: "Nuosu SIL", serif;
+  text-align: center;
+  margin-bottom: 5px;
+}
+main div .card {
+  background-color: #efd8b9;
+}
+main div .card div h4 {
+  font-family: "Nuosu SIL", serif;
+  color: #540a0a;
+  text-align: center;
+}
+main div .card div p {
+  text-align: center;
+  font-family: "Nuosu SIL", serif;
+  font-size: 1rem;
+}
+main .imagenes {
+  display: none;
+}
+main .rowImagenes {
+  display: none;
+}
+main .contenedorPresentacion .textoNosotros {
+  background-color: #f7eade;
+  margin-bottom: 5px;
+}
+main .contenedorPresentacion .textoNosotros p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+main .contenedorPresentacion .nuestraProduccion {
+  display: none;
+}
+main .diseñoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .diseñoForm div .carta {
+  display: none;
+}
+main .diseñoForm form {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: "Nuosu SIL", serif;
+  background-color: #fbcecc;
+  color: #bb4a19;
+  padding: 10px;
+  margin: 10px;
+  border: 8px solid #ff9292;
+  outline: 4px solid #812e15;
+}
+main .diseñoForm form fieldset {
+  display: grid;
+  width: 100%;
+  align-items: center;
+}
+main .diseñoForm form fieldset legend {
+  display: none;
+}
+main .diseñoForm form fieldset div {
+  display: grid;
+  justify-content: center;
+}
+main .diseñoForm form fieldset div label {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 5px 5px 5px 5px 5px 5px 5px;
+  padding: 1px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  align-items: center;
+}
+main .diseñoForm form fieldset div input {
+  background-color: #f3f0f2;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+main .diseñoForm form fieldset div .mensaje {
+  background-color: #f3f0f2;
+}
+main .diseñoForm form fieldset .boton {
+  font-family: "Nuosu SIL", serif;
+  font-size: 15px;
+  padding: 8px;
+  margin: 5px;
+}
+main .diseñoForm form fieldset .opcion {
+  display: flex;
+  padding: 10px;
+}
+main .diseñoForm form fieldset .opcion .pregunta {
+  width: 60px;
+  height: 35px;
+}
+main .diseñoForm form fieldset .promociones {
+  display: flex;
+}
+main .diseñoForm form fieldset .promociones .check {
+  width: 20px;
+  height: 20px;
+}
 
 @media screen and (min-width: 1024px) {
   main section div div .animacionTexto {
@@ -166,10 +290,160 @@ main div .container .card div h4 {
   main div .container .card {
     margin: 10px;
   }
+  main .seccionesNombre h2 {
+    font-size: 1.8rem;
+  }
+  main .productos {
+    display: flex;
+    justify-content: center;
+    font-family: fontrose;
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+  main ol li {
+    font-size: 1.3rem;
+    font-family: "Nuosu SIL", serif;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+  main .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main .container .card {
+    margin: 10px;
+  }
+  main .container .card div h4 {
+    font-family: "Nuosu SIL", serif;
+    color: #540a0a;
+    text-align: center;
+  }
+  main .container .card div p {
+    text-align: center;
+    font-family: "Nuosu SIL", serif;
+    font-size: 1.3rem;
+  }
+  main .imagenes {
+    display: flex;
+    width: 100%;
+    font-family: fontrose;
+    font-style: italic;
+    font-size: 2.8rem;
+    text-decoration: underline;
+    color: #621313;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  main .rowImagenes {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+  }
+  main .rowImagenes div img {
+    width: 100%;
+  }
+  main .rowImagenes .tentate {
+    padding: 10px;
+    margin: 10px;
+  }
+  main .contenedorPresentacion div .nuestraProduccion {
+    display: flex;
+    height: 540px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  main .diseñoForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .diseñoForm .divCarta {
+    display: flex;
+    position: relative;
+    transition: transform 1s;
+    margin-top: 50px;
+  }
+  main .diseñoForm .divCarta:hover {
+    transform: skew(30deg);
+  }
+  main .diseñoForm .divCarta .carta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+  }
+  main .diseñoForm .formulario {
+    width: 60%;
+    background-color: #fdf2e3;
+    color: #211705;
+    border: #d6b8a5 solid 5px;
+    outline: #000000;
+  }
+  main .diseñoForm .formulario fieldset legend {
+    display: flex;
+    font-size: 1.7rem;
+  }
+  main .diseñoForm .formulario fieldset div {
+    display: flex;
+    flex-direction: row;
+  }
+  main .diseñoForm .formulario fieldset div label {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  main .diseñoForm .formulario fieldset div input {
+    background-color: #f3f0f2;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+  main .diseñoForm .formulario fieldset .comentario {
+    flex-direction: column;
+  }
+  main .diseñoForm .formulario fieldset .comentario .mensaje {
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+  }
+  main .diseñoForm .formulario fieldset .boton {
+    font-family: "Nuosu SIL", serif;
+    font-size: 1.3rem;
+    padding: 8px;
+    margin: 5px;
+    width: 40%;
+  }
+  main .diseñoForm .formulario fieldset .opcion {
+    display: flex;
+    padding: 10px;
+  }
+  main .diseñoForm .formulario fieldset .opcion .pregunta {
+    display: flex;
+    width: 20%;
+    margin-top: 15px;
+  }
+  main .diseñoForm .formulario fieldset .promociones {
+    display: flex;
+    width: 50%;
+  }
+  main .diseñoForm .formulario fieldset .promociones .check {
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+  }
 }
 .pieDePagina {
   background-color: #6b0c05;
-  border: 2px solid #ac9511;
+  border: 2px solid #ece075;
 }
 .pieDePagina .redes {
   font-size: 0.8rem;
