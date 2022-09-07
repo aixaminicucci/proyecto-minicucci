@@ -1,0 +1,16 @@
+@mixin botones($borderColor, $textColor, $bgColor) {
+    padding: 15px;
+    border: 2px solid $borderColor;
+    border-radius: 5px;
+    color: $textColor;
+    background-color: $bgColor;
+    font-family: fontrose;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+@mixin display ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

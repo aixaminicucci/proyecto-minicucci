@@ -42,9 +42,7 @@ main {
             }
         }
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include display (column, center, center);
             .card {
                 margin: 3px;
                 div {
@@ -54,6 +52,13 @@ main {
                         text-align: center;
                     }
                 }
+            }
+        }
+        .nuestrosEspeciales {
+            @extend %flexColumn;
+            h2 {
+                font-family: 'Nuosu SIL', serif;
+                color: #621313;
             }
         }
     }
@@ -115,9 +120,7 @@ main {
         }
     }
     .diseñoForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include display (column, center, center);
         div {
             .carta {
                 display: none;
@@ -220,13 +223,11 @@ main {
         div {
             .especiales {
                 h2 {
-                    font-size: 1.5rem;
+                    font-size: map-get($estilos, tamañoSecciones);
                 }
             }
             .container {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                @include display (row, center, center);
                 .card {
                     margin: 10px;
                 }
@@ -234,7 +235,7 @@ main {
         }
         .seccionesNombre {
             h2 {
-                font-size: 1.8rem;
+                font-size: map-get($estilos, tamañoSecciones);
             }
         }
         .productos {
@@ -250,13 +251,11 @@ main {
                 font-family: 'Nuosu SIL', serif;
                 text-align: center;
                 margin-bottom: 5px;
-                padding: 5px;  
+                padding: map-get($estilos, paddingDos);  
             }
         }
         .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include display (row, center, center);
             .card {
                 margin: 10px;
                 div {
@@ -264,8 +263,6 @@ main {
                         font-family: 'Nuosu SIL', serif;
                         color: #540a0a;
                         text-align: center;
-                                    
-                        
                     }
                     p {
                         text-align: center;
@@ -297,7 +294,7 @@ main {
                 }
             }
             .tentate {
-                padding: 10px;
+                padding: map-get($estilos, paddingUno);
                 margin: 10px
             }
         }
@@ -364,7 +361,7 @@ main {
                         }
                     }
                     .comentario {
-                        flex-direction: column;
+                        flex-direction: map-get($estilos, flexColumn);
                         .mensaje {
                             width: 300px;
                             height: 200px;
