@@ -122,8 +122,19 @@ main {
     .diseñoForm {
         @include display (column, center, center);
         div {
-            .carta {
-                display: none;
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            ul {
+                
+                list-style: none;
+                background-color: #f1afaf;
+                border: #a94747 solid 3px;
+                .contactoInfo {
+                    font-family: fontrose;
+                    font-size: 1.6rem;
+                    color: #540a0a;
+                }
             }
         }
         form {
@@ -192,6 +203,7 @@ main {
         }
     }
 }
+
 @media screen and (min-width: 1024px){
     main {
         section {
@@ -310,23 +322,24 @@ main {
         }
         .diseñoForm {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            .divCarta {
+            flex-direction: row;
+            justify-content: space-around;
+            div {
                 display: flex;
-                position: relative;
-                transition: transform 1s;
-                margin-top: 50px;
-                &:hover {
-                    transform: skew(30deg);
-                }
-                .carta {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    width: 350px;
-                    height: 250px; 
+                flex-direction: row;
+                margin-top: 15px;
+                ul {
                     
+                    list-style: none;
+                    background-color: #f1afaf;
+                    border: #a94747 solid 3px;
+                    padding: 20px;
+                    border-radius: 15%;
+                    .contactoInfo {
+                        font-family: fontrose;
+                        font-size: 1.6rem;
+                        color: #540a0a;
+                    }
                 }
             }
             .formulario {
@@ -371,6 +384,7 @@ main {
                     .boton {
                         font-family: 'Nuosu SIL', serif;
                         font-size: 1.3rem;
+                        background-color: #e6652e;
                         padding: 8px;
                         margin: 5px;
                         width: 40%;
@@ -396,5 +410,5 @@ main {
                 }
             }
         }
-    }
+    }    
 }

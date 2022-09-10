@@ -142,8 +142,20 @@ main .diseñoForm {
   justify-content: center;
   align-items: center;
 }
-main .diseñoForm div .carta {
-  display: none;
+main .diseñoForm div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+main .diseñoForm div ul {
+  list-style: none;
+  background-color: #f1afaf;
+  border: #a94747 solid 3px;
+}
+main .diseñoForm div ul .contactoInfo {
+  font-family: fontrose;
+  font-size: 1.6rem;
+  color: #540a0a;
 }
 main .diseñoForm form {
   display: inline-block;
@@ -347,24 +359,25 @@ main .diseñoForm form fieldset .promociones .check {
   }
   main .diseñoForm {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
   }
-  main .diseñoForm .divCarta {
-    display: flex;
-    position: relative;
-    transition: transform 1s;
-    margin-top: 50px;
-  }
-  main .diseñoForm .divCarta:hover {
-    transform: skew(30deg);
-  }
-  main .diseñoForm .divCarta .carta {
+  main .diseñoForm div {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 350px;
-    height: 250px;
+    margin-top: 15px;
+  }
+  main .diseñoForm div ul {
+    list-style: none;
+    background-color: #f1afaf;
+    border: #a94747 solid 3px;
+    padding: 20px;
+    border-radius: 15%;
+  }
+  main .diseñoForm div ul .contactoInfo {
+    font-family: fontrose;
+    font-size: 1.6rem;
+    color: #540a0a;
   }
   main .diseñoForm .formulario {
     width: 60%;
@@ -408,6 +421,7 @@ main .diseñoForm form fieldset .promociones .check {
   main .diseñoForm .formulario fieldset .boton {
     font-family: "Nuosu SIL", serif;
     font-size: 1.3rem;
+    background-color: #e6652e;
     padding: 8px;
     margin: 5px;
     width: 40%;
