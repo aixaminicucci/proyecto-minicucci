@@ -6,9 +6,15 @@
   src: url(../fonts/Rose.ttf);
 }
 header nav {
-  background-color: #6b0c05;
+  background-color: rgba(255, 255, 255, 0.7333333333);
   width: 100%;
-  border: 2px solid rgb(216, 195, 91);
+}
+header nav div a img {
+  border-radius: 50%;
+}
+header nav div .navbar-toggler {
+  background-color: #000000;
+  opacity: 15%;
 }
 header nav div div h1 {
   display: none;
@@ -18,6 +24,11 @@ header nav div div {
   padding: 25px;
 }
 @media screen and (min-width: 1024px) {
+  header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  }
   header nav div div h1 {
     display: flex;
     font-family: fontrose;
@@ -38,14 +49,16 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .img2 {
+main div div div .img2 {
+  display: flex;
   width: 100%;
+  height: 200px;
 }
 main .contenedorPresentacion {
-  box-shadow: 25px 20px 37px -4px rgba(117, 17, 17, 0.75);
-  -webkit-box-shadow: 25px 20px 37px -4px rgba(117, 17, 17, 0.75);
-  -moz-box-shadow: 25px 20px 37px -4px rgba(117, 17, 17, 0.75);
-  margin-top: 10px;
+  box-shadow: 25px 20px 37px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 25px 20px 37px -4px rgba(28, 27, 27, 0.75);
+  -moz-box-shadow: 25px 20px 37px -4px rgba(19, 19, 19, 0.75);
+  margin-top: 35px;
 }
 main .contenedorPresentacion div div p {
   font-size: 1.1rem;
@@ -57,14 +70,15 @@ main div .especiales {
   margin-top: 25px;
   padding-bottom: 5px;
   padding-top: 5px;
-  background-color: #e9e8b1;
-  border: #bea054 solid 1px;
+  background-color: #828282;
+  opacity: 65%;
+  border: #383838 solid 1px;
   border-radius: 3px;
 }
 main div .especiales h2 {
   font-size: 1rem;
   font-family: "Nuosu SIL", serif;
-  color: #62270c;
+  color: #ffffff;
   text-align: center;
 }
 main div .container {
@@ -78,21 +92,26 @@ main div .container .card {
 }
 main div .container .card div h4 {
   font-family: "Nuosu SIL", serif;
-  color: #540a0a;
+  color: #000000;
   text-align: center;
+}
+main div .container .card div .btn {
+  width: 100%;
 }
 main div .nuestrosEspeciales h2 {
   font-family: "Nuosu SIL", serif;
-  color: #621313;
+  color: #000000;
 }
 main .seccionesNombre {
-  background-color: #c09090;
-  border: 2px solid #a94747;
+  background-color: #6c6c6c;
+  opacity: 65%;
+  border: 2px solid #0e0e0e;
 }
 main .seccionesNombre h2 {
   text-align: center;
   font-family: "Nuosu SIL", serif;
   font-size: 1.1rem;
+  color: #ffffff;
 }
 main h3 {
   display: none;
@@ -107,11 +126,12 @@ main ol li {
   margin-bottom: 5px;
 }
 main div .card {
-  background-color: #efd8b9;
+  background-color: rgba(248, 248, 248, 0.7019607843);
+  border: #3b3b3b solid 1px;
 }
 main div .card div h4 {
   font-family: "Nuosu SIL", serif;
-  color: #540a0a;
+  color: #a40000;
   text-align: center;
 }
 main div .card div p {
@@ -126,12 +146,14 @@ main .rowImagenes {
   display: none;
 }
 main .contenedorPresentacion .textoNosotros {
-  background-color: #f7eade;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  background-color: rgba(102, 87, 36, 0.122);
+  border-radius: 15px;
 }
 main .contenedorPresentacion .textoNosotros p {
   font-size: 1.5rem;
-  text-align: center;
+  text-align: justify;
+  padding-top: 25px;
 }
 main .contenedorPresentacion .nuestraProduccion {
   display: none;
@@ -149,24 +171,29 @@ main .diseñoForm div {
 }
 main .diseñoForm div ul {
   list-style: none;
-  background-color: #f1afaf;
-  border: #a94747 solid 3px;
-}
-main .diseñoForm div ul .contactoInfo {
+  background-color: rgba(231, 196, 70, 0.2392156863);
+  border: #7b6d1e solid 3px;
+  padding: 10px;
+  border-radius: 15px;
   font-family: fontrose;
   font-size: 1.6rem;
-  color: #540a0a;
+  color: #714f4f;
+}
+main .diseñoForm div iframe {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #414141;
 }
 main .diseñoForm form {
   display: inline-block;
   font-size: 1.2rem;
   font-family: "Nuosu SIL", serif;
-  background-color: #fbcecc;
-  color: #bb4a19;
+  background-color: rgba(85, 85, 85, 0.3254901961);
+  color: rgba(0, 0, 0, 0.6588235294);
   padding: 10px;
   margin: 10px;
-  border: 8px solid #ff9292;
-  outline: 4px solid #812e15;
+  border: 8px solid #4a4949;
+  outline: 4px solid #2b2b2b;
 }
 main .diseñoForm form fieldset {
   display: grid;
@@ -200,12 +227,6 @@ main .diseñoForm form fieldset div input {
 main .diseñoForm form fieldset div .mensaje {
   background-color: #f3f0f2;
 }
-main .diseñoForm form fieldset .boton {
-  font-family: "Nuosu SIL", serif;
-  font-size: 15px;
-  padding: 8px;
-  margin: 5px;
-}
 main .diseñoForm form fieldset .opcion {
   display: flex;
   padding: 10px;
@@ -223,13 +244,24 @@ main .diseñoForm form fieldset .promociones .check {
 }
 
 @media screen and (min-width: 1024px) {
+  main {
+    padding-top: 137px;
+  }
+  main div div div .img2 {
+    display: flex;
+    width: 100%;
+    height: 450px;
+  }
   main section div div .animacionTexto {
-    box-shadow: 12px 11px 30px 3px rgba(235, 189, 189, 0.88);
-    -webkit-box-shadow: 12px 11px 30px 3px rgba(235, 189, 189, 0.88);
-    -moz-box-shadow: 12px 11px 30px 3px rgba(235, 189, 189, 0.88);
+    box-shadow: 12px 11px 30px 3px rgba(41, 41, 41, 0.88);
+    -webkit-box-shadow: 12px 11px 30px 3px rgba(37, 37, 37, 0.88);
+    -moz-box-shadow: 12px 11px 30px 3px rgba(14, 14, 14, 0.88);
     font-size: 1.7rem;
     font-family: "Nuosu SIL", serif;
     text-align: center;
+    color: #040425;
+    margin-top: 20px;
+    border-radius: 25px;
     -webkit-animation-name: animacion;
             animation-name: animacion;
     -webkit-animation-duration: 5s;
@@ -241,42 +273,18 @@ main .diseñoForm form fieldset .promociones .check {
   }
   @-webkit-keyframes animacion {
     0% {
-      background-color: #f89999;
-    }
-    20% {
-      background-color: #fac8ab;
-    }
-    40% {
-      background-color: #fffccf;
-    }
-    60% {
-      background-color: #c5ffc2;
-    }
-    80% {
-      background-color: #c7c5fb;
+      background-color: rgba(167, 187, 236, 0.6196078431);
     }
     100% {
-      background-color: #e9c4ee;
+      background-color: rgba(136, 146, 179, 0.7725490196);
     }
   }
   @keyframes animacion {
     0% {
-      background-color: #f89999;
-    }
-    20% {
-      background-color: #fac8ab;
-    }
-    40% {
-      background-color: #fffccf;
-    }
-    60% {
-      background-color: #c5ffc2;
-    }
-    80% {
-      background-color: #c7c5fb;
+      background-color: rgba(167, 187, 236, 0.6196078431);
     }
     100% {
-      background-color: #e9c4ee;
+      background-color: rgba(136, 146, 179, 0.7725490196);
     }
   }
   main div .especiales h2 {
@@ -319,7 +327,7 @@ main .diseñoForm form fieldset .promociones .check {
   }
   main .container .card div h4 {
     font-family: "Nuosu SIL", serif;
-    color: #540a0a;
+    color: #c80202;
     text-align: center;
   }
   main .container .card div p {
@@ -334,8 +342,10 @@ main .diseñoForm form fieldset .promociones .check {
     font-style: italic;
     font-size: 2.8rem;
     text-decoration: underline;
-    color: #621313;
+    color: #460c0c;
+    background-color: rgba(108, 108, 108, 0.5882352941);
     justify-content: center;
+    padding: 10px;
     margin-top: 25px;
     margin-bottom: 10px;
   }
@@ -351,11 +361,18 @@ main .diseñoForm form fieldset .promociones .check {
     padding: 10px;
     margin: 10px;
   }
+  main .contenedorPresentacion {
+    padding: 30px;
+  }
   main .contenedorPresentacion div .nuestraProduccion {
     display: flex;
-    height: 540px;
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  main .contenedorPresentacion div .nuestraProduccion img {
+    width: 100%;
+    height: 450px;
+    border-radius: 50%;
   }
   main .diseñoForm {
     display: flex;
@@ -364,7 +381,7 @@ main .diseñoForm form fieldset .promociones .check {
   }
   main .diseñoForm div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 15px;
   }
   main .diseñoForm div ul {
@@ -379,11 +396,21 @@ main .diseñoForm form fieldset .promociones .check {
     font-size: 1.6rem;
     color: #540a0a;
   }
+  main .diseñoForm div iframe {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+  }
   main .diseñoForm .formulario {
     width: 60%;
+    background-image: url("../imagenes/fondocontacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #fdf2e3;
     color: #211705;
     border: #d6b8a5 solid 5px;
+    border-radius: 25px;
     outline: #000000;
   }
   main .diseñoForm .formulario fieldset legend {
@@ -393,38 +420,35 @@ main .diseñoForm form fieldset .promociones .check {
   main .diseñoForm .formulario fieldset div {
     display: flex;
     flex-direction: row;
+    padding: 10px;
   }
   main .diseñoForm .formulario fieldset div label {
     display: flex;
     flex-direction: row;
-    font-size: 1.1rem;
-    padding: 10px;
+    font-size: 1.5rem;
     margin-bottom: 5px;
-    margin-top: 5px;
+  }
+  main .diseñoForm .formulario fieldset div .deseoProm {
+    margin-top: 15px;
   }
   main .diseñoForm .formulario fieldset div input {
     background-color: #f3f0f2;
     width: 100%;
     height: 35px;
     margin-bottom: 5px;
-    margin-top: 5px;
     margin-right: 20px;
   }
   main .diseñoForm .formulario fieldset .comentario {
     flex-direction: column;
   }
   main .diseñoForm .formulario fieldset .comentario .mensaje {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     margin-left: 20px;
   }
   main .diseñoForm .formulario fieldset .boton {
-    font-family: "Nuosu SIL", serif;
-    font-size: 1.3rem;
-    background-color: #e6652e;
-    padding: 8px;
-    margin: 5px;
     width: 40%;
+    margin-top: 2px;
   }
   main .diseñoForm .formulario fieldset .opcion {
     display: flex;
@@ -446,15 +470,17 @@ main .diseñoForm form fieldset .promociones .check {
   }
 }
 .pieDePagina {
-  background-color: #6b0c05;
-  border: 2px solid rgb(216, 195, 91);
+  background-color: #000000;
+  border: 2px solid rgba(0, 0, 0, 0.9803921569);
 }
 .pieDePagina .redes {
+  margin-right: 10px;
+}
+.pieDePagina .redes p {
   font-size: 0.8rem;
   font-family: "Nuosu SIL", serif;
-  color: #ece075;
+  color: #ffffff;
   text-align: end;
-  margin-right: 10px;
 }
 .pieDePagina .redes a {
   display: flex;
@@ -462,11 +488,11 @@ main .diseñoForm form fieldset .promociones .check {
   justify-content: end;
   align-items: end;
   padding-top: 5px;
-  color: #fff7f3;
+  color: #aa8740;
 }
 .pieDePagina .autor {
   font-family: "Nuosu SIL", serif;
-  color: #000000;
+  color: #ffffff;
   font-size: 1rem;
   text-align: left;
   margin-left: 10px;
@@ -478,9 +504,11 @@ main .diseñoForm form fieldset .promociones .check {
     font-size: 1.5rem;
   }
   .pieDePagina .redes {
+    padding-right: 80px;
+  }
+  .pieDePagina .redes p {
     text-align: right;
     font-size: 1.4rem;
-    padding-right: 80px;
   }
   .pieDePagina .redes a {
     display: flex;
@@ -491,10 +519,10 @@ main .diseñoForm form fieldset .promociones .check {
 }
 .boton1 {
   padding: 15px;
-  border: 2px solid #b36cc1;
+  border: 2px solid #fab1b1;
   border-radius: 5px;
   color: #000000;
-  background-color: rgb(251, 195, 252);
+  background-color: rgba(246, 146, 146, 0.415);
   font-family: fontrose;
   font-size: 1.5rem;
   margin: 5px;
@@ -502,10 +530,10 @@ main .diseñoForm form fieldset .promociones .check {
 
 .boton2 {
   padding: 15px;
-  border: 2px solid #ac527f;
+  border: 2px solid #c3c2eb;
   border-radius: 5px;
   color: #000000;
-  background-color: rgb(252, 195, 209);
+  background-color: rgba(142, 134, 200, 0.402);
   font-family: fontrose;
   font-size: 1.5rem;
   margin: 5px;
@@ -513,10 +541,10 @@ main .diseñoForm form fieldset .promociones .check {
 
 .boton3 {
   padding: 15px;
-  border: 2px solid #7052ac;
+  border: 2px solid #98b4c0;
   border-radius: 5px;
   color: #000000;
-  background-color: rgb(205, 195, 252);
+  background-color: rgba(166, 186, 190, 0.449);
   font-family: fontrose;
   font-size: 1.5rem;
   margin: 5px;
@@ -526,20 +554,33 @@ header nav div div ul li .nav-link {
   color: #ffffff;
   margin-left: 15px;
   font-size: 1.1rem;
-  background-color: #580d0d;
+  background-color: #4e4e4e;
   font-family: "Nuosu SIL", serif;
   text-decoration: none;
-  border-radius: 5px;
-  border-bottom: 3px solid #3e0303;
+  border-radius: 25px;
   margin-right: 1px;
   padding: 10px;
 }
 header nav div div ul li .nav-link:hover {
-  background-color: #c47676;
+  background-color: #aa8740;
 }
 
 main div .nuestrosEspeciales {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+main div .container .card div .btn, main .diseñoForm form fieldset .boton {
+  padding: 5px;
+  color: #2a2212;
+  background-color: rgba(77, 77, 77, 0.1450980392);
+  border: 2px solid #4d4d4d;
+  font-family: "Nuosu SIL", serif;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+main div .container .card div .btn:hover, main .diseñoForm form fieldset .boton:hover {
+  background-color: rgba(170, 135, 64, 0.7058823529);
 }/*# sourceMappingURL=estilos.css.map */

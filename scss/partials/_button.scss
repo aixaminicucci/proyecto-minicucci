@@ -1,9 +1,9 @@
 .boton1 {
-    @include botones($borderColor: #b36cc1,  $textColor: #000000, $bgColor: rgb(251, 195, 252));
+    @include botones($borderColor: #fab1b1,  $textColor: #000000, $bgColor: rgba(246, 146, 146, 0.415));
 }
 .boton2 {
-    @include botones($borderColor: #ac527f,  $textColor: #000000, $bgColor: rgb(252, 195, 209));
+    @include botones($borderColor: #c3c2eb,  $textColor: #000000, $bgColor: rgba(142, 134, 200, 0.402));
 }
 .boton3 {
-    @include botones($borderColor: #7052ac,  $textColor: #000000, $bgColor: rgb(205, 195, 252));
+    @include botones($borderColor: #98b4c0,  $textColor: #000000, $bgColor: rgba(166, 186, 190, 0.449));
 }

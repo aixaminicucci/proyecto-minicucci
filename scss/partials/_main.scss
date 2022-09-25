@@ -7,14 +7,22 @@ main {
     background-image: url("../imagenes/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    .img2 {
-        width: 100%;
+    div {
+        div {
+            div {
+                .img2 {
+                    display: flex;
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        }
     }
     .contenedorPresentacion {
-        box-shadow: 25px 20px 37px -4px rgba(117,17,17,0.75);
-        -webkit-box-shadow: 25px 20px 37px -4px rgba(117,17,17,0.75);
-        -moz-box-shadow: 25px 20px 37px -4px rgba(117,17,17,0.75);
-        margin-top: 10px;
+        box-shadow: 25px 20px 37px -4px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 25px 20px 37px -4px rgba(28, 27, 27, 0.75);
+        -moz-box-shadow: 25px 20px 37px -4px rgba(19, 19, 19, 0.75);
+        margin-top: 35px;
         div { 
             div {
                 p {
@@ -31,13 +39,14 @@ main {
             margin-top: 25px;
             padding-bottom: 5px;
             padding-top: 5px;
-            background-color: #e9e8b1;
-            border: #bea054 solid 1px;
+            background-color: #828282;
+            opacity: 65%;
+            border: #383838 solid 1px;
             border-radius: 3px;
             h2 {
                 font-size: 1rem;
                 font-family: 'Nuosu SIL', serif;
-                color: #62270c;
+                color: #ffffff;
                 text-align: center;
             }
         }
@@ -48,8 +57,12 @@ main {
                 div {
                     h4 {
                         font-family: 'Nuosu SIL', serif;
-                        color: #540a0a;
+                        color: #000000;
                         text-align: center;
+                    }
+                    .btn {
+                        @extend %estiloBtn;
+                        width: 100%;
                     }
                 }
             }
@@ -58,17 +71,19 @@ main {
             @extend %flexColumn;
             h2 {
                 font-family: 'Nuosu SIL', serif;
-                color: #621313;
+                color: #000000;
             }
         }
     }
     .seccionesNombre {
-        background-color: #c09090;
-        border: 2px solid #a94747;
+        background-color: #6c6c6c;
+        opacity: 65%;
+        border: 2px solid #0e0e0e;
         h2 {
             text-align: center;
             font-family: 'Nuosu SIL', serif;
             font-size: 1.1rem;
+            color: #ffffff;
         }
     }
     h3 {
@@ -85,11 +100,12 @@ main {
     }
     div {
         .card {
-        background-color: #efd8b9;
+        background-color: #f8f8f8b3;
+        border: #3b3b3b solid 1px;
             div {
                 h4 {
                     font-family: 'Nuosu SIL', serif;
-                    color: #540a0a;
+                    color: #a40000;
                     text-align: center;             
                     }
                 p {
@@ -108,11 +124,13 @@ main {
     }
     .contenedorPresentacion {
         .textoNosotros {
-            background-color: #f7eade;
-            margin-bottom: 5px;
+            margin-bottom: 15px;
+            background-color: rgba(102, 87, 36, 0.122);
+            border-radius: 15px;
             p {
                 font-size: 1.5rem;
-                text-align: center;
+                text-align:justify;
+                padding-top: 25px;
             }
         }
         .nuestraProduccion {
@@ -126,27 +144,31 @@ main {
             flex-direction: column;
             margin-top: 15px;
             ul {
-                
                 list-style: none;
-                background-color: #f1afaf;
-                border: #a94747 solid 3px;
-                .contactoInfo {
-                    font-family: fontrose;
-                    font-size: 1.6rem;
-                    color: #540a0a;
-                }
+                background-color: #e7c4463d;
+                border: #7b6d1e solid 3px;
+                padding: 10px;
+                border-radius: 15px;
+                font-family: fontrose;
+                font-size: 1.6rem;
+                color: #714f4f;
+            }
+            iframe {
+                width: 300px;
+                height: 200px;
+                border: 2px solid #414141;
             }
         }
         form {
             display: inline-block;
             font-size: 1.2rem;
             font-family: 'Nuosu SIL', serif;
-            background-color: #fbcecc;
-            color: #bb4a19;
+            background-color: #55555553;
+            color: #000000a8;
             padding: 10px;
             margin: 10px;
-            border: 8px solid #ff9292;
-            outline: 4px solid #812e15;
+            border: 8px solid #4a4949;
+            outline: 4px solid #2b2b2b;
             fieldset {
                 display: grid;
                 width: 100%;
@@ -179,10 +201,7 @@ main {
                     }
                 }
                 .boton {
-                    font-family: 'Nuosu SIL', serif;
-                    font-size: 15px;
-                    padding: 8px;
-                    margin: 5px;
+                    @extend %estiloBtn;
                 }
                 .opcion {
                     display: flex;
@@ -206,27 +225,38 @@ main {
 
 @media screen and (min-width: 1024px){
     main {
+        padding-top: 137px;
+        div {
+            div {
+                div {
+                    .img2 {
+                        display: flex;
+                        width: 100%;
+                        height: 450px;
+                    }
+                }
+            }
+        }
         section {
             div {
                 div {
                     .animacionTexto {
-                        box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);
-                        -webkit-box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);
-                        -moz-box-shadow: 12px 11px 30px 3px rgba(235,189,189,0.88);                
+                        box-shadow: 12px 11px 30px 3px rgba(41, 41, 41, 0.88);
+                        -webkit-box-shadow: 12px 11px 30px 3px rgba(37, 37, 37, 0.88);
+                        -moz-box-shadow: 12px 11px 30px 3px rgba(14, 14, 14, 0.88);                
                         font-size: 1.7rem;
                         font-family: 'Nuosu SIL', serif;
                         text-align: center;
+                        color: #040425;
+                        margin-top: 20px;
+                        border-radius: 25px;
                         animation-name: animacion;
                         animation-duration: 5s;
                         animation-timing-function: ease;
                         animation-iteration-count: infinite;
                         @keyframes animacion {
-                            0% {background-color: #f89999;}
-                            20% {background-color: #fac8ab;}
-                            40% {background-color: #fffccf;}
-                            60% {background-color: #c5ffc2;}
-                            80% {background-color: #c7c5fb}
-                            100% {background-color: #e9c4ee;}
+                            0% {background-color: #a7bbec9e;}
+                            100% {background-color: #8892b3c5;}
                         }
                     }
                 }
@@ -273,7 +303,7 @@ main {
                 div {
                     h4 {
                         font-family: 'Nuosu SIL', serif;
-                        color: #540a0a;
+                        color: #c80202;
                         text-align: center;
                     }
                     p {
@@ -291,8 +321,10 @@ main {
             font-style: italic;
             font-size: 2.8rem;
             text-decoration: underline;
-            color: #621313;
+            color: #460c0c;
+            background-color: #6c6c6c96;
             justify-content: center;
+            padding: 10px;
             margin-top: 25px;
             margin-bottom: 10px;
         }
@@ -311,12 +343,17 @@ main {
             }
         }
         .contenedorPresentacion {
+            padding: 30px;
             div {
                 .nuestraProduccion {
                     display: flex;
-                    height: 540px;
                     margin-top: 15px;
                     margin-bottom: 15px;
+                    img {
+                        width: 100%;
+                        height: 450px;
+                        border-radius: 50%;
+                    }
                 }
             }
         }
@@ -326,10 +363,9 @@ main {
             justify-content: space-around;
             div {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 margin-top: 15px;
                 ul {
-                    
                     list-style: none;
                     background-color: #f1afaf;
                     border: #a94747 solid 3px;
@@ -341,12 +377,22 @@ main {
                         color: #540a0a;
                     }
                 }
+                iframe {
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                    height: 250px;
+                }
             }
             .formulario {
                 width: 60%;
+                background-image: url("../imagenes/fondocontacto.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
                 background-color: #fdf2e3;
                 color: #211705;
                 border:#d6b8a5 solid 5px;
+                border-radius: 25px;
                 outline: #000000;
                 fieldset {
                     legend {
@@ -356,38 +402,35 @@ main {
                     div {
                         display: flex;
                         flex-direction: row;
+                        padding: 10px;
                         label {
                             display: flex;
                             flex-direction: row;
-                            font-size: 1.1rem;
-                            padding: 10px;
+                            font-size: 1.5rem;
                             margin-bottom: 5px;
-                            margin-top: 5px;
+                        }
+                        .deseoProm {
+                            margin-top: 15px;
                         }
                         input {
                             background-color: #f3f0f2;
                             width: 100%;
                             height: 35px;
                             margin-bottom: 5px;
-                            margin-top: 5px;
                             margin-right: 20px;
                         }
                     }
                     .comentario {
                         flex-direction: map-get($estilos, flexColumn);
                         .mensaje {
-                            width: 300px;
-                            height: 200px;
+                            width: 400px;
+                            height: 250px;
                             margin-left: 20px;
                         }
                     }
                     .boton {
-                        font-family: 'Nuosu SIL', serif;
-                        font-size: 1.3rem;
-                        background-color: #e6652e;
-                        padding: 8px;
-                        margin: 5px;
                         width: 40%;
+                        margin-top: 2px;
                     }
                     .opcion {
                         display: flex;

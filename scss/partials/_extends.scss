@@ -2,19 +2,31 @@
     color: $primaryColor;
     margin-left: 15px;
     font-size: 1.1rem;
-    background-color: #580d0d;
+    background-color: #4e4e4e;
     font-family: 'Nuosu SIL', serif;
     text-decoration: none;
-    border-radius: 5px;
-    border-bottom: 3px solid #3e0303;
+    border-radius: 25px;
     margin-right: 1px;
     padding: 10px;
     &:hover {
-        background-color: #c47676;
+        background-color: #aa8740;
     }
 }
 %flexColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+%estiloBtn  {
+    padding: 5px;
+    color: #2a2212;
+    background-color: #4d4d4d25;
+    border: 2px solid #4d4d4d;
+    font-family: 'Nuosu SIL', serif;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: 10px;
+    &:hover {
+        background-color: #aa8740b4;
+    }
 }

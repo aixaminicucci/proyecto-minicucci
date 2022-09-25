@@ -7,8 +7,16 @@ header {
     nav {
         background-color: map-get($estilos, colorPrimario);
         width: 100%;
-        border: 2px solid $secondaryColor;
         div {
+            a {
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .navbar-toggler {
+                background-color: #000000;
+                opacity: 15%;
+            }
             div {
                 h1 {
                     display: none;
@@ -30,6 +38,9 @@ header {
 }
 @media screen and (min-width: 1024px){
     header {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
         nav {
             div {
                 div {
