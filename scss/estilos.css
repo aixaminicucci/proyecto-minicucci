@@ -553,6 +553,7 @@ main .diseñoForm form fieldset .promociones .check {
 header nav div div ul li .nav-link {
   color: #ffffff;
   margin-left: 15px;
+  margin-bottom: 2px;
   font-size: 1.1rem;
   background-color: #4e4e4e;
   font-family: "Nuosu SIL", serif;
