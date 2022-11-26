@@ -34,6 +34,10 @@ header {
                 }
             }
         }
+        .mirar-carrito {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
     }
 }
 @media screen and (min-width: 1024px){
@@ -61,6 +65,13 @@ header {
                         }
                     }
                 }
+            }
+            .mirar-carrito {
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+            .unidades-carrito {
+                display: none
             }
         }
     }

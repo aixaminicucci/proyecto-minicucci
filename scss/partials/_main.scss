@@ -33,47 +33,79 @@ main {
             }
         }
     }
-    div {
-        .especiales {
-            margin-bottom: 5px;
-            margin-top: 25px;
-            padding-bottom: 5px;
-            padding-top: 5px;
-            background-color: #828282;
-            opacity: 65%;
-            border: #383838 solid 1px;
-            border-radius: 3px;
-            h2 {
-                font-size: 1rem;
-                font-family: 'Nuosu SIL', serif;
-                color: #ffffff;
-                text-align: center;
-            }
-        }
-        .container {
-            @include display (column, center, center);
-            .card {
-                margin: 3px;
-                div {
-                    h4 {
-                        font-family: 'Nuosu SIL', serif;
-                        color: #000000;
-                        text-align: center;
-                    }
-                    .btn {
-                        @extend %estiloBtn;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        .nuestrosEspeciales {
-            @extend %flexColumn;
-            h2 {
-                font-family: 'Nuosu SIL', serif;
-                color: #000000;
-            }
-        }
+    .tienda-contenido {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 25px;
+        margin-left: 70px;
+        margin-right: 70px;
+        
+    }
+    .card {
+        max-width: 290px;
+        margin: auto;
+        text-align: center;
+        font-family: 'Nuosu SIL', serif;
+    }
+    .card > img {
+        width: 100%;
+        height: 230px;
+    }
+    .precio {
+        color: #530000;
+        font-size: 1rem;
+    }
+    .card button {
+        border: none;
+        padding: 15px;
+        color: #9b9b9b;
+        background-color: #000000;
+        text-align: center;
+        width: 100%;
+        font-size: 1.3rem;
+
+    }
+    .modal-contenedor {
+        width: 75%;
+        margin:0 10%;
+        max-width: 80 vh;
+        background-color: rgba(14, 14, 14, 0.87);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:fixed;
+        overflow: auto;
+        scrollbar-color: none;
+        z-index: 100;
+        top: 15vh;
+        
+    }
+    .modal-contenedor::-webkit-scrollbar {
+        display: none;
+    }
+    .modal-header {
+        background-color: #070606;
+        color: #ffffff;
+        width: 100%;
+    }
+    .modal-header-titulo {
+        justify-self: start;
+    }
+    .modal-contenedor > .modal-contenido{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+        width: 35%;
+        margin: 15px;
+    } 
+    .total-contenido {
+        font-size: 1.3rem;
+        color: #ffffff;
+        padding: 25px;
+        text-align: center;
     }
     .seccionesNombre {
         background-color: #6c6c6c;
@@ -262,18 +294,41 @@ main {
                 }
             }
         }
-        div {
-            .especiales {
-                h2 {
-                    font-size: map-get($estilos, tamañoSecciones);
-                }
-            }
-            .container {
-                @include display (row, center, center);
-                .card {
-                    margin: 10px;
-                }
-            }
+        .tienda-contenido {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            margin-left: 70px;
+            margin-right: 70px;
+            
+        }
+        .card {
+            max-width: 290px;
+            margin: auto;
+            text-align: center;
+            font-family: 'Nuosu SIL', serif;
+        }
+        .card > img {
+            width: 100%;
+            height: 230px;
+        }
+        .precio {
+            color: #530000;
+            font-size: 1.3rem;
+        }
+        .card button {
+            border: none;
+            padding: 15px;
+            color: #9b9b9b;
+            background-color: #000000;
+            text-align: center;
+            width: 100%;
+            font-size: 1.3rem;
+
+        }
+        .card button:hover {
+            opacity: 0.5;
         }
         .seccionesNombre {
             h2 {

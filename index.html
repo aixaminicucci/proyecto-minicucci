@@ -42,9 +42,10 @@
                     </ul>
                 </div>
             </div>
+            <h1 class="mirar-carrito" id= mirarCarrito>🛒 <span id="unidadesCarrito" class="unidades-carrito"></span></h1>
         </nav>
     </header>
-    <main>
+    <main id="contenedor-mercaderia">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -68,39 +69,9 @@
                 </div>
             </div>
         </section>
-        <div>
-            <div class="especiales">
-                <h2>Top 3 especiales</h2>
-            </div>
-            <section class="container">
-                <div class="card">
-                    <img src="./imagenes/tortabomba.jpg" class="card-img-top" alt="Torta bomba">
-                    <div class="card-body">
-                        <h4 class="card-text">Torta Bomba</h4>
-                        <a href="#" class="btn">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./imagenes/magiccupcake.jpg" class="card-img-top" alt="Magic cupcakes">
-                    <div class="card-body">
-                        <h4 class="card-text">Magic cupcakes</h4>
-                        <a href="#" class="btn">Comprar</a>
-                    </div>
-                </div>            
-                <div class="card">
-                    <img src="./imagenes/eclairsdechocolateycrema.jpg" class="card-img-top" alt="Eclairs con chocolate">
-                    <div class="card-body">
-                        <h4 class="card-text">Eclairs con chocolate</h4>
-                        <a href="#" class="btn">Comprar</a>
-                    </div>
-                </div>
-            </section>
-            <section class="nuestrosEspeciales">
-                <h2>¿Qué te parecen nuestros especiales?</h2>
-                <button class="boton1">Me fascinan</button>
-                <button class="boton2">Me gustan</button>
-                <button class="boton3">No me interesan</button>
-            </section>
+        <div id="tiendaContenido" class="tienda-contenido">
+        </div>
+        <div id="modalContenedor" class="modal-contenedor">
         </div>
     </main>
     <footer class="pieDePagina">
@@ -115,8 +86,9 @@
         </div>
         <p class="autor">&copy; Aixa Minicucci 2022</p>
     </footer>
-    <script src="mercaderia.js"></script>
-    <script src="main.js"></script>
+    <script src="./javaScript/mercancia.js"></script>
+    <script src="./javaScript/app.js"></script>
+    <script src="./javaScript/modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
