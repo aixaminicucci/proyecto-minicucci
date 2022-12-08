@@ -1,41 +1,43 @@
-const tiendaContenido = document.getElementById("tiendaContenido");
 const mirarCarrito = document.getElementById ("mirarCarrito");
 const modalContenedor = document.getElementById ("modalContenedor");
 const unidadesCarrito = document.getElementById ("unidadesCarrito");
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+let tiendaContenido = document.querySelector ("#tiendaContenido")
+fetch ("archivo.json")
+    .then ((resp) => resp.json ())
+    .then ((archivo) => {
+        console.log (archivo.results);
 
-mercancia.forEach((product) => {
-    let contenido = document.createElement("div");
-    contenido.className = "card";
-    contenido.innerHTML = ` 
-    <img src="${product.img}">
-    <h2> ${product.nombre}</h2>
-    <p class="precio">$${product.valor} </p>
-    `;
-    
-    tiendaContenido.append(contenido);
+        archivo.map ((item) => {
+            const contenido = document.createElement ("div");
+            contenido.className = "card";
+            contenido.innerHTML = ` 
+            <img src="${item.img}">
+            <h2> ${item.nombre}</h2>
+            <p class="precio">$${item.valor} </p>
+            `;
+            tiendaContenido.append(contenido);
+            let comprar = document.createElement ("button")
+            comprar.innerText = "AGREGAR AL CARRITO";
+            comprar.className = "agregar";
 
-    let comprar = document.createElement ("button")
-    comprar.innerText = "AGREGAR AL CARRITO";
-    comprar.className = "agregar";
+            contenido.append(comprar);
 
-    contenido.append(comprar);
+            comprar.addEventListener ("click", () => {
+            const coincidir = carrito.some ((coincidirProducto) => coincidirProducto.id === item.id);
 
-    comprar.addEventListener ("click", () => {
-        const coincidir = carrito.some ((coincidirProducto) => coincidirProducto.id === product.id);
-
-        if (coincidir){
-            carrito.map((produc) => {
-                if (produc.id === product.id) {
-                    produc.unidades++;
+            if (coincidir){
+                carrito.map((produc) => {
+                    if (produc.id === item.id) {
+                        produc.unidades++;
                 }
             });
-        } else {
-            carrito.push({
-            id : product.id,
-            nombre: product.nombre,
-            valor: product.valor,
-            unidades: product.unidades,
+            } else {
+                carrito.push({
+                id : item.id,
+                nombre: item.nombre,
+                valor: item.valor,
+                unidades: item.unidades,
         });
         console.log (carrito);
         console.log (carrito.length);
@@ -43,8 +45,10 @@ mercancia.forEach((product) => {
         saveLocal ();
     }
     });
+        });   
 });
 
 const saveLocal = () =>{
 localStorage.setItem ("carrito", JSON.stringify(carrito));
 };
+
