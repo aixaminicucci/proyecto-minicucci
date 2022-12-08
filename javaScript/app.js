@@ -51,4 +51,3 @@ fetch ("archivo.json")
 const saveLocal = () =>{
 localStorage.setItem ("carrito", JSON.stringify(carrito));
 };
-
