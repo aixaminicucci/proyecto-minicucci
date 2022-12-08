@@ -51,3 +51,24 @@ fetch ("archivo.json")
 const saveLocal = () =>{
 localStorage.setItem ("carrito", JSON.stringify(carrito));
 };
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_dkrv3yo';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviando Email';
+      swal('Tu mensaje ha sido enviado');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

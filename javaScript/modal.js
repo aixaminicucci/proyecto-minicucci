@@ -61,8 +61,20 @@ const apretarCarrito = () => {
 
     const totalCompra = document.createElement ("div")
     totalCompra.className = "total-contenido"
-    totalCompra.innerHTML = `Total de tu compra: $ ${total}`;
+    totalCompra.innerHTML = `Total de tu compra: $ ${total}
+    <button id="vaciar-carrito" class="vaciar-carrito"> Vaciar carrito </button>
+    `;
     modalContenedor.append (totalCompra);
+
+    let vaciar = totalCompra.querySelector (".vaciar-carrito")
+    vaciar.addEventListener ("click", () => {
+        carrito.length = 0;
+        swal('Vaciaste tu carrito');
+        carritoCounter ();
+        saveLocal();
+        apretarCarrito();
+        
+    });
 
 };
 
@@ -77,6 +89,8 @@ const descartarProducto = (id) => {
     saveLocal ();
     apretarCarrito ();
 };
+
+
 
 const carritoCounter = () => {
     unidadesCarrito.style.display = "block";

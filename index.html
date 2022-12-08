@@ -10,6 +10,13 @@
     <meta name="description" content="Somos una pasteleria y panaderia de estilo frances con el agregado de toque argentino, aca encontraras una propuesta variada de productos que te van a interesar">
     <meta name="keywords" content="PANADERIA, PASTELERIA, FRANCIA, FRANCESA, LE PECHE, BOULANGERIE PATISSERIE">
     <title>Le péché</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('gzi1FZM6t_hFDPAFD')
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body class="contenedorIndex">
     <header class="encabezado">
@@ -35,9 +42,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -73,6 +77,52 @@
         </div>
         <div id="modalContenedor" class="modal-contenedor">
         </div>
+        <div class="seccionesNombre">
+            <h2>Contacto</h2>
+            </div>
+            <section class="diseñoForm container">
+                <div>
+                    <ul class="contactoInfo">
+                        <li class="contactoInfo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                        </svg>lepeche_01@gmail.com</li>
+                        <li class="contactoInfo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>Av. Siempreviva 742</li>
+                        <li class="contactoInfo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg> 1160225615</li>
+                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.05303164835755!2d-58.5235013030046!3d-34.614954716084505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb72381bf0411%3A0xa2db8025422cd65d!2zTGUgUMOpY2jDqQ!5e0!3m2!1ses-419!2sar!4v1664131359492!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        <form  id="form" class="formulario">
+            <fieldset>
+                <legend>Comunicate con nosotros</legend>
+                <div>
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input type="text" name="nombre" id="from_name">
+                </div>
+                <div>
+                    <label for="barrio">Barrio:</label>
+                    <input type="text" name="barrio">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email_id">
+                </div>
+                <div>
+                    <label for="telefono">Tel:</label>
+                    <input type="number" name="telefono">
+                </div>
+
+                <div class="comentario">
+                    <label for="mensaje">Comentario:</label>
+                    <textarea name="mensaje" cols="40" rows="10" class="mensaje"></textarea>
+                </div>
+                <input type="reset" value="Borrar todo" class="boton">
+                <input type="submit" value="Enviar Email" id="button" class="boton">
+            </fieldset>
+        </form>
     </main>
     <footer class="pieDePagina">
         <div class="redes">
